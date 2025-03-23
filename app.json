@@ -1,0 +1,65 @@
+{
+    "id": "5dbe51c2-13cb-4b68-bd28-d230343c4774",
+    "version": "0.0.1",
+    "requiredApiVersion": "^1.44.0",
+    "iconFile": "icon.png",
+    "author": {
+        "name": "Sezal Lagwal",
+        "homepage": "https://github.com/sezallagwal/Apps.AI.Transcribe",
+        "support": "https://github.com/sezallagwal/Apps.AI.Transcribe/issues/"
+    },
+    "name": "transcription-app",
+    "nameSlug": "transcription-app",
+    "classFile": "TranscriptionApp.ts",
+    "description": "A Rocket.Chat App that enhances the existing voice message feature with transcription and translation capabilities.",
+    "implements": [
+        "IPostMessageSent"
+    ],
+    "permissions": [
+        {
+            "name": "slashcommand"
+        },
+        {
+            "name": "user.read"
+        },
+        {
+            "name": "user.write"
+        },
+        {
+            "name": "room.read"
+        },
+        {
+            "name": "room.write"
+        },
+        {
+            "name": "message.read"
+        },
+        {
+            "name": "message.write"
+        },
+        {
+            "name": "api"
+        },
+        {
+            "name": "persistence"
+        },
+        {
+            "name": "networking"
+        },
+        {
+            "name": "threads.read"
+        },
+        {
+            "name": "upload.read"
+        },
+        {
+            "name": "ui.registerButtons"
+        },
+        {
+            "name": "ui.interact"
+        },
+        {
+            "name": "server-setting.read"
+        }
+    ]
+}
