@@ -18,7 +18,7 @@ import {
 import { sendHelperMessageOnInstall, sendMessage } from "./src/helpers/message";
 import { Settings, settings } from "./src/settings/settings";
 import { getData } from "./src/helpers/persistance";
-import { isAudio } from "./src/helpers/attachment";
+import { isAudio } from "./src/helpers/isAudio";
 import {
     UIKitActionButtonInteractionContext,
     IUIKitResponse,
@@ -59,10 +59,10 @@ export class TranscriptionApp extends App implements IPostMessageSent {
             const { actionId, user, room, message } =
                 context.getInteractionData();
 
-            console.log(
-                "context get interaction date: ",
-                context.getInteractionData()
-            );
+            // console.log(
+            //     "context get interaction date: ",
+            //     context.getInteractionData()
+            // );
 
             if (actionId === "transcribe" && message) {
                 const preferredLanguage = await getPreferredLanguage(
